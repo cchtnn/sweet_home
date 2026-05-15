@@ -174,5 +174,6 @@ artifact/
 # dvc
 .dvc
 mlruns/
+.venv/
 
 
