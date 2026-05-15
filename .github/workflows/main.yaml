@@ -64,7 +64,7 @@ jobs:
 
 
   # trying to debug2
-  Continuous-Deployment:
+  continuous-deployment:
     name: Continuous Deployment
     needs: build-and-push-ecr-image
     runs-on: ubuntu-latest
