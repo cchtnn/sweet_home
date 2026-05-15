@@ -26,22 +26,10 @@ jobs:
       - name: Run unit tests
         run: echo "Running unit tests"
 
-  # build-and-push-ecr-image:
-  #   name: Continuous Delivery
-  #   needs: integration
-  #   runs-on: ubuntu-latest
-
-  #   steps:
-  #     - name: Checkout Code
-  #       uses: actions/checkout@v3
-
-  #     - name: Build notification
-  #       run: echo "Build and push to ECR is not configured"
-
-  # build-and-push-ecr-image:
-  #   name: Continuous Delivery
-  #   needs: integration
-  #   runs-on: ubuntu-latest
+  build-and-push-ecr-image:
+    name: Continuous Delivery
+    needs: integration
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
